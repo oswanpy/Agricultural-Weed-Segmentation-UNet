@@ -73,4 +73,5 @@ The U-Net implementation uses:
 
 - The training script uses a weighted cross-entropy loss to account for class imbalance
 - The model runs on `cuda` if available, otherwise on CPU
+- Designed for modest hardware like a GTX 1650 Super with 16GB RAM, using tile-based loading, smaller batch sizes, and lightweight U-Net blocks for optimization
 - You can change experiment parameters in `src/experiments.py`
